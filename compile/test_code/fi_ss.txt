@@ -1,0 +1,35 @@
+int fi(int a){
+	if (a == 1) {
+		return 1;
+	}
+	if (a == 0) {
+		return 1;
+	}
+	return fi(a-1) + fi(a-2);
+}
+
+void main(void){
+	int a;
+	int b;
+	int c;
+	int d;
+	int e;
+	int f;
+	int s;
+	int ss;
+	int i;
+	s = 0;
+	ss = 0;
+	a = fi(0);
+	b = fi(1);
+	c = fi(2);
+	d = fi(3);
+	e = fi(4);
+	f = fi(5);
+	ss = a + b + c + d + e + f;
+	i = 0;
+	while (i < 6) {
+		s = s + fi(i);
+		i = i + 1;
+	}
+}
